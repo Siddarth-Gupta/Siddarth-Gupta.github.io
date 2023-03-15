@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position:absolute;
+    background-color: #323946;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 45px;
+
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar nav li a:hover{
+    color: #3BBA9C;
+}
+
+.main{
+    background-color: #282f3a;
+    width: 900vw;
+    height: 500vh;
+}
+ 
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: beige; */
+    height: 50vh;
+    width: 80vw;
+    margin: 175px auto ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    margin-left: 30px;
+}
+
+.hello{
+    font-size: 1.5em; 
+}
+.name{
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    color: #3BBA9C;
+}
+.about{
+    font-size: 2em;
+}
+.moreabout{
+    font-size: 1.75em;
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.socialmedia{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(#1f242d);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #1f242d;
+    /* margin: 15px auto; */
+    margin-left: 50px;
+    transition: .5s ease-in;
+}
+
+.socialmedia a{
+    margin-left: 20px;
+}
+
+.buttons{
+    margin-top: 0.5em;
+    margin-left: 35px;
+    font-size: 10px;
+    
+}
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    border-color: #282f3a;
+    color: #1f242d;
+    background-color: #3BBA9C;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 3px 3px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+}
+
+.buttons button:hover{
+    color: #3BBA9C;
+    background-color: #1f242d;
+}
+
+.devPic img{
+    height: 55vh;
+}
+
+.contactform{
+    padding: 0 34px;
+    font-family: 'Nunito', sans-serif;
+    margin: 88px;
+    color: white;
+}
+
+.contactform h1{
+    font-family: 'Mulish', sans-serif;
+    text-align: center; 
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /* width: 20vw; */
+    border-radius: 5px;
+    margin: 6px 0 0;
+    padding: 3px;
+}
+
+.contactform form{
+    margin: 0 40px;
+}
+
+#emailHELP{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+/* not given */
+.contactform button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: #1f242d;
+    background-color: #3BBA9C;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.contactform button:hover{
+    color: #3BBA9C;
+    background-color: #1f242d;
+}
+
+.form-check{
+    flex-direction: row;
+}
+
+.form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+.projectItem{
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.projectsContainer{
+    margin: 10px 88px;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    margin: 23px;
+    color: #3BBA9C;
+}
+
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #3BBA9C);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0 40px; */
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.work button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: #1f242d;
+    background-color: #3BBA9C;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+.work button:hover{
+    color: #3BBA9C;
+    background-color: #1f242d;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto; 
+    width: fit-content;
+    border: 1px solid #3BBA9C;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover{
+    background: #3BBA9C;
+}
+
+/* .layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+} */
+
+/* p{
+    font-family: 'Source Sans Pro', sans-serif;
+} */
+
+/* .projectItem button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: #1f242d;
+    background-color: #0ef;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+.projectItem button:hover{
+    color: #0ef;
+    background-color: #1f242d;
+} */
+
+.intro{
+    margin: 88px 88px;
+    color: white;
+}
+
+.intro h2{
+    font-family: 'Nunito', sans-serif;
+    margin: 12px;
+    color: #3BBA9C;
+}
+
+.intro p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    margin: 12px;
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+
+.skill{
+    margin: 10px;
+    height: 10px;
+    width: 265px;
+    background-color: red;
+    border: 2px solid black ;
+}
+
+.hundred{
+    width: 265px;
+    background-color: pink;
+}
+
+.fifty{
+    width: 200px;
+    background-color: pink;
+}
+
+.t5{
+    width: 150px;
+    background-color: pink;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.cross{
+    margin-left: 185px;
+    margin-top: 8px;
+}
+
+@media (max-width: 1400px){
+    .buttons{
+        font-size: 6px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro, .projectsContainer, .contactform{
+        margin: 50px 8px;
+    }
+}
