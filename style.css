@@ -360,7 +360,7 @@ h1{
     border: 2px solid black ;
 }
 
-.hundred{
+/* .hundred{
     width: 265px;
     background-color: pink;
 }
@@ -374,7 +374,7 @@ h1{
     width: 150px;
     background-color: pink;
 }
-
+ */
 .sidebarGo{
     transform: translate(-443px, 0);
     position: absolute;
