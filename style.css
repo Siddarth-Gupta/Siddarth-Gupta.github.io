@@ -10,7 +10,9 @@
 }
 
 .sidebar{
-    position:absolute;
+    /* position: absolute; */
+    position:fixed;
+    z-index: 999;
     background-color: #323946;
     height: 100vh;
     font-family: 'Nunito', sans-serif;
@@ -394,6 +396,7 @@ h1{
     cursor: pointer;
     top: 10px;
     left: 10px;
+    z-index: 9999; /* changes made here*/
 }
 
 .ham{
@@ -416,7 +419,7 @@ h1{
     .devPic{
         display: none;
     }
-    .intro, .projectsContainer .contactform{
+    .intro, .projectsContainer, .contactform, .worklist{
         margin: 50px 8px;
     }
     .worklist{
