@@ -202,7 +202,8 @@
 }
 
 h1{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
     margin: 23px;
     color: #3BBA9C;
 }
@@ -329,20 +330,28 @@ h1{
     color: white;
 }
 
-.intro h2{
-    font-family: 'Nunito', sans-serif;
-    margin: 12px;
+.intro h1{
+    font-family: 'Heebo', sans-serif;
+    margin: 23px;
+    font-weight: bold;
     color: #3BBA9C;
+}
+
+.intro h2{
+    font-family: 'Heebo', sans-serif;
+    margin: 20px;
+    font-weight: bold;
+    /* color: #3b89ba; */
 }
 
 .intro p{
     font-family: 'Mulish', sans-serif;
-    font-size: 18px;
-    margin: 12px;
+    font-size: 17px;
+    margin: 23px;
 }
 
 .skillcontainer{
-    padding: 12px;
+    padding: 23px;
 }
 
 .skillitem{
@@ -357,7 +366,7 @@ h1{
     height: 10px;
     width: 265px;
     background-color: white;
-    border: 2px solid white;
+    border: 2px solid white ;
 }
 
 /* .hundred{
@@ -373,8 +382,8 @@ h1{
 .t5{
     width: 150px;
     background-color: pink;
-}
- */
+} */
+
 .sidebarGo{
     transform: translate(-443px, 0);
     position: absolute;
@@ -393,7 +402,7 @@ h1{
 }
 
 .cross{
-    margin-left: 185px;
+    margin-left: 250px;
     margin-top: 8px;
 }
 
@@ -407,7 +416,7 @@ h1{
     .devPic{
         display: none;
     }
-    .intro, .projectsContainer, .contactform{
+    .intro, .projectsContainer .contactform{
         margin: 50px 8px;
     }
     .worklist{
