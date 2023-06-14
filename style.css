@@ -7,6 +7,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .sidebar{
@@ -294,6 +295,133 @@ h1{
     background: #3BBA9C;
 }
 
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.contain{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.contain:nth-child(1){
+    animation-delay: 0s;
+}
+.contain:nth-child(2){
+    animation-delay: 1s;
+}
+.contain:nth-child(3){
+    animation-delay: 2s;
+}
+.contain:nth-child(4){
+    animation-delay: 3s;
+}
+.contain:nth-child(5){
+    animation-delay: 4s;
+}
+.contain:nth-child(6){
+    animation-delay: 5s;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-contain{
+    left : 0px;
+}
+
+.right-contain{
+    left: 50%;
+}
+
+.contain img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 30;
+}
+
+.right-contain img{
+    left: -20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 20;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.text-box h2{
+    font-weight: 600;
+    color: #3BBA9C;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-contain-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 6;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+}
+
+.right-contain-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 6;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+}
+
 /* .layer a{
     margin-top: 20px;
     color: #ff004f;
@@ -424,5 +552,36 @@ h1{
     }
     .worklist{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px){
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .contain{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-contain{
+        left: 0;
+    }
+    .left-contain img, .right-contain img{
+        left: 10px;
+    }
+    .left-contain-arrow, .right-contain-arrow{
+        border-right: 15px solid white;
+        border-left: 0;
+        left: -15px;
     }
 }
