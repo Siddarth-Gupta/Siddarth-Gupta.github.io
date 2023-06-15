@@ -557,7 +557,7 @@ h1{
 
 @media screen and (max-width: 600px){
     .timeline{
-        margin: 50px auto;
+        margin: 60px auto;
     }
     .timeline::after{
         left: 31px;
